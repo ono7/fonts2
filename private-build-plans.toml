@@ -26,7 +26,6 @@ g = "single-storey-earless-corner"
 i = "serifed-diagonal-tailed"
 j = "serifed"
 k = "symmetric-connected-serifless"
-# l = "serifed-diagonal-tailed"
 l = "tailed-serifed"
 m = "earless-rounded-double-arch-serifless"
 n = "earless-corner-straight-serifless"
@@ -89,8 +88,3 @@ css = "italic"
 leading = 1150
 winMetricAscenderPad = 0
 winMetricDescenderPad = 0
-# dont mess with these so that symbols/nerdfonts work properly
-# powerlineScaleY = 0
-# powerlineScaleX = 0
-# powerlineShiftY = 0
-# powerlineShiftX = 0
