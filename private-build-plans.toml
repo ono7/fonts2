@@ -16,6 +16,7 @@ zero = "tall-reverse-slashed"
 one = "base-long-top-serif"
 four = "semi-open-non-crossing-serifless"
 capital-k = "symmetric-touching-serifless"
+asterisk = "penta-low"
 a = "single-storey-earless-corner-tailed"
 b = "toothless-corner-serifless"
 c = "serifless"
@@ -23,10 +24,12 @@ d = "toothless-corner-serifless"
 e = "flat-crossbar"
 f = "flat-hook-serifless"
 g = "single-storey-earless-corner"
-i = "serifed-diagonal-tailed"
+# i = "serifed-diagonal-tailed" # this is good
+i = "serifed-flat-tailed"
 j = "serifed"
 k = "symmetric-connected-serifless"
-l = "tailed-serifed"
+# l = "tailed-serifed" # this is good
+l = "serifed-flat-tailed"
 m = "earless-rounded-double-arch-serifless"
 n = "earless-corner-straight-serifless"
 p = "earless-corner-serifless"
@@ -63,12 +66,13 @@ w = "straight-serifless"
 [buildPlans.IosevkaCustomV3.weights.Regular]
 # shape = 400 - this is the normal size
 # shape = 700 - this is bold and was my favourite but tone it down to 650
-shape = 720
+shape = 600
 menu = 400
 css = 400
 
 [buildPlans.IosevkaCustomV3.widths.Normal]
-shape = 500
+# NOTE(jlima): Semi-Extended (575) cell width offsets the inward stroke expansion of weight 600, keeping internal counters open.
+shape = 575
 menu = 5
 css = "normal"
 
