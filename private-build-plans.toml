@@ -5,7 +5,6 @@ serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
 noLigation = true
-# if we leave this out this will generate the correct fonts for macos/linux/windows
 hinting = "none"
 
 [buildPlans.IosevkaCustomV3.variants]
@@ -24,11 +23,9 @@ d = "toothless-corner-serifless"
 e = "flat-crossbar"
 f = "flat-hook-serifless"
 g = "single-storey-earless-corner"
-# i = "serifed-diagonal-tailed" # this is good
 i = "serifed-flat-tailed"
 j = "serifed"
 k = "symmetric-connected-serifless"
-# l = "tailed-serifed" # this is good
 l = "serifed-flat-tailed"
 m = "earless-rounded-double-arch-serifless"
 n = "earless-corner-straight-serifless"
@@ -64,14 +61,19 @@ v = "straight-serifless"
 w = "straight-serifless"
 
 [buildPlans.IosevkaCustomV3.weights.Regular]
-# shape = 400 - this is the normal size
-# shape = 700 - this is bold and was my favourite but tone it down to 650
-shape = 600
+# NOTE(jlima): Decreased regular shape weight slightly from 600 to 500 to improve baseline readability.
+shape = 500
 menu = 400
 css = 400
 
+[buildPlans.IosevkaCustomV3.weights.Bold]
+# NOTE(jlima): Explicitly defined bold variant to map to 700, ensuring distinct contrast against the regular weight.
+shape = 700
+menu = 700
+css = 700
+
 [buildPlans.IosevkaCustomV3.widths.Normal]
-# NOTE(jlima): Semi-Extended (575) cell width offsets the inward stroke expansion of weight 600, keeping internal counters open.
+# NOTE(jlima): Semi-Extended (575) cell width offsets the inward stroke expansion of the heavier weights, keeping internal counters open.
 shape = 575
 menu = 5
 css = "normal"
